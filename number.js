@@ -13,10 +13,10 @@ rl.question('Игра началась, назовите Ваше имя :', (na
 
     rl.question('Угадайте число, 1 или 2? ', (answer) => {
 
-        const number = Math.ceil(Math.random()*2)
+        const number = Math.ceil(Math.random() * 2)
         answer = +answer
 
-        if(answer === number) {
+        if (answer === number) {
             console.log(`Вы угадали! Загадано число: ${number}`)
             fs.appendFile(filePath, '\ntrue', err => {
                 if (err) {
