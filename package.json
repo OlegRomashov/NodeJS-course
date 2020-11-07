@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-course",
+  "version": "1.0.0",
+  "description": "NodeJS course from GeekBrains",
+  "main": "index.js",
+  "dependencies": {
+    "ansi": "^0.3.1",
+    "chalk": "^4.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlegRomashov/NodeJS-course.git"
+  },
+  "author": "Oleg Romashov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlegRomashov/NodeJS-course/issues"
+  },
+  "homepage": "https://github.com/OlegRomashov/NodeJS-course#readme"
+}
