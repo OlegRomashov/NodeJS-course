@@ -25,14 +25,8 @@ rl.question('Введите название файла?', (name) => {
             let max = 0
             let count = 0
             for (let i = 0; i < data.length; i++) {
-                if (data[i] === x) {
-                    count++
-                } else {
-                    if (count > max) {
-                        max = count
-                    }
-                    count = 0;
-                }
+                data[i] === x ? count++ :
+                    count > max ? (max = count, count = 0) : count = 0
             }
             return max
         }
