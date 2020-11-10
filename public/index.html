@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Translation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+    <div class="app__header">
+        <h1>Переводчик</h1>
+    </div>
+    <form action="/" method="POST" class="app__content">
+        <div class="input">
+            <label for="trans1">Текст для перевода</label>
+            <input type="text" id="trans1" placeholder="введите текст" name="text">
+        </div>
+        <button type="submit" class="btn">Перевести</button>
+        <div class="input">
+            <label for="trans2">Перевод</label>
+            <div type="text" id="trans2" placeholder="введите текст" name="city"></div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
