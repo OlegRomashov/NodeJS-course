@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranlate service</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="app">
+    <div class="app__header">
+        <h1>Переводчик</h1>
+    </div>
+    {{#if error }}
+    <h1 class="error">Ошибка: {{ error }}</h1>
+    {{else}}
+    <h2>Результат перевода: {{ text }}</h2>
+    {{/if}}
+    <form method="POST" action="/translate" class="app__content">
+        <div class="input">
+            <label for="text">Текст для перевода</label>
+            <input type="text" placeholder="введите текст" name="text">
+        </div>
+        <label>
+            Код исходного языка
+            <input type="text" name="sourceLanguageCode" placeholder="Введите исходный язык" value="ru"/>
+        </label><br>
+        <label>
+            Код языка перевода
+            <input type="text" name="targetLanguageCode" placeholder="Введите язык пеервода" value="en"/>
+        </label><br>
+        <button type="submit" class="btn">Перевести</button>
+    </form>
+</div>
+</body>
+</html>
